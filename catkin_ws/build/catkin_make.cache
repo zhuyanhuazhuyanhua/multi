@@ -1,0 +1,2 @@
+fashionstar-uart-servo-ros1:realsense-ros/realsense2_camera:realsense-ros/realsense2_description:ros_astra_camera:ros_imu_ws/src:rplidar_ros-master:speech_command:ydlidar_ros_driver-master
+-DCATKIN_DEVEL_PREFIX=/home/jetson/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jetson/catkin_ws/install -G Unix Makefiles

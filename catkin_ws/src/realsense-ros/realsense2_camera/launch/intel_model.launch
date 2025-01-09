@@ -1,0 +1,19 @@
+<launch>
+    <arg name="use_model" default="true" doc="use_model type [false,true]"/>
+    <arg name="intel_model" default="d435i" doc="intel_model type [d415,d435,d435i]"/>
+    <group if="$(arg use_model)">
+        <param name="robot_description"
+               command="$(find xacro)/xacro --inorder
+           '$(find realsense2_description)/urdf/test_$(arg intel_model)_camera.urdf.xacro'
+           use_nominal_extrinsics:=true add_plug:=true use_mesh:=true"/>
+        <node pkg="tf" type="static_transform_publisher" name="base_link_to_imu_link"
+              args="0.0 0 0.5 0 0 0  /world /base_link  100"/>
+        <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    </group>
+    <group unless="$(arg use_model)">
+        <node pkg="tf" type="static_transform_publisher" name="base_link_to_imu_link"
+              args="0.0 0 0.5 0 0 0  /world /camera_link  100"/>
+    </group>
+    <include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find realsense2_camera)/rviz/intel_model.rviz" required="true"/>
+</launch>

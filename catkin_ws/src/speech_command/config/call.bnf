@@ -1,0 +1,9 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar call;
+!slot <want>;
+!slot <dowhat>;
+!slot <do>;
+!slot <what>;
+!start <callstart>;
+<callstart>:<dowhat>;
+<dowhat>:去一号位!id(10001)|去二号位!id(10001)|去三号位!id(10001)|导航到一号位!id(10001)|导航到二号位!id(10001)|导航到三号位!id(10001)|前进!id(10001)|后退!id(10001)|左转!id(10001)|右转!id(10001)|左旋!id(10001)|右旋!id(10001)|过来!id(10001);

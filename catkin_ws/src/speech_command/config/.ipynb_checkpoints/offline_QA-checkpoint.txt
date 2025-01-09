@@ -1,0 +1,10 @@
+向左走|往左走|左走:AA0200FF:/audio/offline_left.mp3
+向前走|往前走|前走:AA0100FF:/audio/offline_left.mp3
+向右走|往右走|右走:AA0300FF:/audio/offline_left.mp3
+向上走|往上走|上走:AA0400FF:/audio/offline_left.mp3
+向前停|往前停|前停:AA0500FF:/audio/offline_left.mp3
+去一号位|去二号位|去三号位:AA0200FF:/audio/offline.wav
+导航到一号位|导航到二号位|导航到三号位:AA0100FF:/audio/point_1.mp3
+前进|后退:AA0300FF:/audio/offline.wav
+左转|右转|左旋|右旋:AA0400FF:/audio/offline.wav
+过来:AA0500FF:/audio/offline.wav

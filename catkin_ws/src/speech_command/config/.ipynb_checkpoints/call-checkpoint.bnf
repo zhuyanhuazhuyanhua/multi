@@ -1,0 +1,13 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar call;
+!slot <want>;
+!slot <direction>;
+!slot <do>;
+!slot <what>;
+
+!start <callstart>;
+<callstart>:[<want>]<dowhat>;
+<want>:向|往|你往|你向;
+<dowhat>:<direction><do>;
+<direction>:左!id(10001)|右!id(10001)|前!id(10001)|后!id(10001);
+<do>:走!id(10001)|移动!id(10001)|转!id(10001)|动!id(10001)|动动!id(10001);

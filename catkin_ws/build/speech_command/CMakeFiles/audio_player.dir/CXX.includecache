@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jetson/catkin_ws/src/speech_command/include/AudioPlayer.h
+alsa/asoundlib.h
+-
+
+/home/jetson/catkin_ws/src/speech_command/src/AudioPlayer.cpp
+AudioPlayer.h
+-
+iostream
+-
+

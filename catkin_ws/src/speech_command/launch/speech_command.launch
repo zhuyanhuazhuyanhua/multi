@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="speech_command" type="speech_command_node" name="speech_command_node" output="screen"/>
+</launch>

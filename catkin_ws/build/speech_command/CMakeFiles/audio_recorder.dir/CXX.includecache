@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jetson/catkin_ws/src/speech_command/include/AudioRecorder.h
+hidapi.h
+/home/jetson/catkin_ws/src/speech_command/include/hidapi.h
+iostream
+-
+
+/home/jetson/catkin_ws/src/speech_command/include/hidapi.h
+wchar.h
+-
+protocol_proc_unit.h
+/home/jetson/catkin_ws/src/speech_command/include/protocol_proc_unit.h
+
+/home/jetson/catkin_ws/src/speech_command/include/protocol_proc_unit.h
+pthread.h
+-
+queue_simple.h
+/home/jetson/catkin_ws/src/speech_command/include/queue_simple.h
+
+/home/jetson/catkin_ws/src/speech_command/include/queue_simple.h
+stdio.h
+-
+stdlib.h
+-
+stdint.h
+-
+unistd.h
+-
+windows.h
+-
+errno.h
+-
+pthread.h
+-
+
+/home/jetson/catkin_ws/src/speech_command/src/AudioRecorder.cpp
+AudioRecorder.h
+-
+
